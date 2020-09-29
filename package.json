@@ -1,0 +1,15 @@
+{
+  "name": "sponsor-data-sdk-web",
+  "version": "1.0.0",
+  "description": "this is a develop project for sdk in sponsor data project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc --watch"
+  },
+  "author": "Juan M Martínez Ortiz",
+  "license": "ISC",
+  "dependencies": {
+    "network-information-types": "^0.1.0"
+  }
+}

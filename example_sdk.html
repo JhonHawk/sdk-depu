@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sponsor data</title>
+</head>
+<body>
+  
+</body>
+<script>
+  (function () {
+    // add a queue event here
+    SponsorDataSDK = window.SponsorDataSDK || (window.SponsorDataSDK = []);
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = 'http://<DOMAIN>.com/sdk.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  })();
+
+  // execute your script immediately here
+  SponsorDataSDK.push(['some arguments']);
+</script>
+</html>
