@@ -1,5 +1,4 @@
-import { AsnData, IpData } from "./interfaces/asn";
-
+import { AsnData } from "./interfaces/asn";
 
 let li = document.getElementsByTagName('li');
 
@@ -15,12 +14,9 @@ async function http<T>(url: string): Promise<T>{
 
 async function getSignal() {
   try {
-    // const request = await http<IpData>("https://api.ipify.org?format=jsonp");
-    const request: any = window.localStorage.getItem('ip');
-    // const asn = await http<AsnData>(`http://localhost:8080/201.175.132.20`);
-    const asn = await http<AsnData>(`http://localhost:8080/${request}`);
+    // const asn = await http<AsnData>(`http://localhost:8080/`);
+    const asn = await http<AsnData>(`https://a67f29cbaeff.ngrok.io/`);
     await setAttr(asn)
-    console.log('getip',request)
     console.log('getasn', asn)
   } catch (e) {
     console.log('GetErroVerify',e);
